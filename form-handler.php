@@ -4,8 +4,6 @@ $visitor_email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
 
-$email_from = '@srcreation.vercel.app';
-
 $email_subject = 'New Form Submition';
 
 $email_body = "User Name: $name.\n".
