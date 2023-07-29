@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,
+wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a327dedaf8.js" crossorigin="anonymous"></script>
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="Shortcut Icon" type="image/png/jpg" href="https://wallpapercave.com/uwp/uwp3454988.png">
+</head>
+
+<body>
+
+    <section class="hod">
+
+        <nav>
+            <a href="index.html"><img src="https://wallpapercave.com/uwp/uwp3454990.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="shop.html">SHOPE</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                    <li><a href="https://maxy-six.vercel.app/"><i class='bx bxs-bot' ></i></a></li>
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+
+        <h1>It's more than a website. It's your future.</h1>
+
+    </section>
+
+    <!--------- Shop -------->
+
+    <section class="about-us">
+
+        <div class="row">
+            <div class="about-col">
+                <h1>Build with the world’s most intuitive platform</h1>
+                <p>Create better websites with mobile-responsive templates, seamless drag & drop and unlimited customization.</p>
+
+                <div class="button">
+                    <li class="btn"><a href="form.html">Enroll Now</a></li>
+                </div>
+            </div>
+            <div class="about-col">
+                <img src="s-2.jpg">
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="about-us">
+
+        <div class="row">
+            <div class="about-col">
+                <img src="s-3.jpg">
+            </div>
+            <div class="about-col">
+                <h1>Manage your brand from one place</h1>
+                <p>Sell your products or services, start a blog and make smart decisions with clear analytics.</p>
+
+                <div class="button">
+                    <li class="btn"><a href="form.html">Enroll Now</a></li>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="about-us">
+
+        <div class="row">
+            <div class="about-col">
+                <h1>Grow your online presence</h1>
+                <p>Boost traffic and increase engagement with built-in SEO tools, Facebook ads, email marketing and social posts.</p>
+
+                <div class="button">
+                    <li class="btn"><a href="form.html">Enroll Now</a></li>
+                </div>
+
+            </div>
+            <div class="about-col">
+                <img src="s-1.jpg">
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+    <!--------- Footer -------->
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>contact If you want to make a website like this or any other website, you can <br> me here is my gmail and my social media links are provided
+            <br> here i will reply will be given as soon as possible</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/sarthak.raut.5036?mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+            <a href="https://mobile.twitter.com/Sarthak072323/likes"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/sarthak_2007_/?igshid=YmMyMTA2M2Y%3D"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/sarthak-raut-942622274?trk=contact-info"><i class="fa fa-linkedin"></i></a>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i> By SR Creations</p>
+    </section>
+
+
+    <!------JavaScript for Toggle Menu------>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>

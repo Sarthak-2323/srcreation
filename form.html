@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="form.css" rel="stylesheet">
+    <link rel="Shortcut Icon" type="image/png/jpg" href="https://wallpapercave.com/uwp/uwp3454988.png">
+</head>
+<body>
+    <div class="form">
+
+        <form name="order" method="POST" data-netlify="true">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="number" name="Contact" placeholder="Enter your Contact Number" required>
+            <input type="text" name="City" placeholder="Your city" required>
+            <input type="number" name="Pin Code" placeholder="Your Pin-code" required>
+
+            <label for="lang">Type of website</label>
+            <select name="types" id="lang">
+                <option value="select">Select a Website</option>
+                <option value="START-UP WEBSITE">START-UP WEBSITE</option>
+                <option value="BUSINESS WEBSITE">BUSINESS WEBSITE</option>
+                <option value="E-COMMERS WEBSITE">E-COMMERS WEBSITE</option>
+            </select>
+
+            <label for="lang">Budget</label>
+            <select name="types" id="lang">
+                <option value="select">Select a Budget</option>
+                <option value="5,000 - 20,000">5,000 - 20,000</option>
+                <option value="20,000 - 50,000">20,000 - 50,000</option>
+                <option value="50,000 - 1,00,000">50,000 - 1,00,000</option>
+            </select>
+
+            <br>
+
+            <button type="submit" class="hero-btn red-btn">SUBMIT</button>
+          </form>
+
+
+    </div>
+</body>
+</html>
