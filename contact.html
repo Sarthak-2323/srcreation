@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,
@@ -25,10 +27,10 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" r
     <section class="sub-header">
 
         <nav>
-            <a href="index.html"><img src="https://wallpapercave.com/uwp/uwp3454990.png" alt=""></a>
+            <a href="index.html"><img src="https://wallpapercave.com/uwp/uwp3454990.png" alt="" data-aos="zoom-in"></a>
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
+                <i class="fa fa-times" onclick="hideMenu()" data-aos="zoom-in"></i>
+                <ul data-aos="zoom-in">
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="shop.html">SHOPE</a></li>
                     <li><a href="about.html">ABOUT US</a></li>
@@ -37,17 +39,17 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" r
                 </ul>
 
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <i class="fa fa-bars" onclick="showMenu()" data-aos="zoom-in"></i>
 
         </nav>
 
-        <h1>Contact Us</h1>
+        <h1 data-aos="fade-up">Contact Us</h1>
 
     </section>
 
     <!--------- About Us Section -------->
 
-    <section class="location">
+    <section class="location" data-aos="fade-up">
 
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3864309.2843580144!2d77.593812!3d18.9429197!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2ef88682aff03%3A0x8f1183045ce2366!2sSaswad%2C%20Maharashtra%20412301!5e0!3m2!1sen!2sin!4v1682923729818!5m2!1sen!2sin"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -58,21 +60,21 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" r
 
         <div class="row">
             <div class="contact-col">
-                <div>
+                <div data-aos="fade-up">
                     <a href=""><i class="fa fa-home"></i></a>
                     <span>
                         <h5>Landge aali, Saswad</h5>
                         <p>Maharashtra, IN</p>
                     </span>
                 </div>
-                <div>
+                <div data-aos="fade-up">
                     <a href=""><i class="fa fa-phone"></i></a>
                     <span>
                         <h5>+91 9423042645</h5>
                         <p>Contact With Us On Whatsapp Only</p>
                     </span>
                 </div>
-                <div>
+                <div data-aos="fade-up">
                     <a href=""><i class="fa fa-envelope"></i></a>
                     <span>
                         <h5>sarthak0723@gmail.com</h5>
@@ -80,7 +82,7 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" r
                     </span>
                 </div>
             </div>
-            <div class="contact-col">
+            <div class="contact-col" data-aos="fade-up">
 
                 <form name="contact" method="post" action="form-handler.php">
                     <input type="text" name="name" placeholder="Enter your name" required>
@@ -133,6 +135,14 @@ wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" r
         function hideMenu() {
             navLinks.style.right = "-200px";
         }
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 250,
+        duration: 1500,
+      });
     </script>
 
 </body>
