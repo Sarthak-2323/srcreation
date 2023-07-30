@@ -18,9 +18,11 @@ $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 
 
-mail($to,$email_subject,$email_body,$headers);
+mail($mailTo,$email_subject,$email_body,$headers);
 
-header("Location: contact.html");
+$headers = "From: " .$name . "<". $message . ">";
+$headers .= "MIME-Version: 1.0\r\n";
+$headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
 $result = mail($mailTo,$email_subject,$email_body,$headers);
  
